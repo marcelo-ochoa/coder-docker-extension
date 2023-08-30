@@ -24,7 +24,7 @@ RUN --mount=type=cache,target=/go/pkg/mod \
 
 FROM alpine:3.15
 
-LABEL org.opencontainers.image.title="VS Code for the Web Docker Desktop Extension"
+LABEL org.opencontainers.image.title="VS Code for the Web"
 LABEL org.opencontainers.image.description="Docker Extension for using an embedded VS Code for the Web."
 LABEL org.opencontainers.image.vendor="Marcelo Ochoa"
 LABEL com.docker.desktop.extension.api.version=">= 0.2.3"
