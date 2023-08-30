@@ -1,0 +1,17 @@
+{
+  "icon": "coder.svg",
+  "vm": {
+    "composefile": "docker-compose.yml",
+    "exposes": { "socket": "coder-docker-extension.sock" }
+  },
+  "ui": {
+    "dashboard-tab": {
+      "title": "VS Code Web",
+      "root": "/ui",
+      "src": "index.html",
+      "backend": {
+        "socket": "coder-docker-extension.sock"
+      }
+    }
+  }
+}

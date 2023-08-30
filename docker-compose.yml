@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  coder-docker-extension:
+    image: ${DESKTOP_PLUGIN_IMAGE}
+  coder:
+    image: codercom/code-server:4.16.1
+    command: --auth none --verbose --app-name VS Code Web Docker Desktop Extension
+    container_name: coder_embedded_dd_vm
+    restart: unless-stopped
+    volumes:
+      - coder_data:/home/coder
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      TZ: America/Argentina/Buenos_Aires
+    ports:
+      - 57080:8080
+volumes:
+  coder_data:
