@@ -32,7 +32,8 @@ LABEL com.docker.extension.categories="utility-tools,cloud-development"
 LABEL com.docker.extension.screenshots="[{\"alt\":\"Welcome Page\", \"url\":\"https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/docs/images/screenshot1.png\"},\
     {\"alt\":\"Change Project Folder\", \"url\":\"https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/docs/images/screenshot2.png\"},\
     {\"alt\":\"Clone a New Project\", \"url\":\"https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/docs/images/screenshot3.png\"},\
-    {\"alt\":\"VS Code Web in Action\", \"url\":\"https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/docs/images/screenshot4.png\"}]"
+    {\"alt\":\"VS Code Web in Action\", \"url\":\"https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/docs/images/screenshot4.png\"},\
+    {\"alt\":\"Dark Mode\", \"url\":\"https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/docs/images/screenshot5.png\"}]"
 LABEL com.docker.extension.publisher-url="https://github.com/marcelo-ochoa/coder-docker-extension"
 LABEL com.docker.extension.additional-urls="[{\"title\":\"Documentation\",\"url\":\"https://github.com/marcelo-ochoa/coder-docker-extension/blob/main/README.md\"},\
     {\"title\":\"License\",\"url\":\"https://github.com/marcelo-ochoa/coder-docker-extension/blob/main/LICENSE\"}]"
