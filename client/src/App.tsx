@@ -16,7 +16,7 @@ export function App() {
 
   useEffect(() => {
     let timer: number;
-    let shCmd = '"sed -i s/'.concat((isDarkModeEnabled) ? 'Light' : 'Dark').concat('/').concat((isDarkModeEnabled) ? 'Dark' : 'Light').concat('/g /home/coder/.local/share/code-server/User/settings.json"')
+    let shCmd = '"sed -i s/'.concat((isDarkModeEnabled) ? 'Light' : 'Dark').concat('/').concat((isDarkModeEnabled) ? 'Dark' : 'Light').concat('/g /home/coder/.local/share/code-server/User/settings.json || echo \'{\\"workbench.colorTheme\\": \\"Default Light Modern\\"}\' > /home/coder/.local/share/code-server/User/settings.json"')
     console.log(shCmd);
     const start = async () => {
       setReady(() => false);

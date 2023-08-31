@@ -43,7 +43,7 @@ $ docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://r
 Processing triggers for man-db (2.9.4-2) ...
 ```
 
-Note 1: that if you upgrade VS Code Web Docker Desktop Extension these post installations steps must be re-done.
+Note 1: that if you upgrade VS Code Web Docker Desktop Extension above post installations steps must be re-done.
 
 Note 2: If you add Docker Client/Extension support [addDocker.sh](https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addDocker.sh) coder_embedded_dd_vm need to be restarted, execute:
 
@@ -55,6 +55,10 @@ coder_embedded_dd_vm
 ### Persistent storage
 
 Any project that you checkout using git command into /home/coder directory will persistent against Docker Desktop restart also VS Code Web extension upgraded.
+
+## Know kveats
+
+If your Docker Desktop is running in Dark Mode, first execution of VS Code Web will start in Light mode, switch to other pane back again to the extension and it will run in Dark mode. For the next switchs changing Docker Deskop UI colors will change automatically the extension setting.
 
 ## Uninstall
 
