@@ -17,7 +17,7 @@ export function App() {
   useEffect(() => {
     let timer: number;
     let shCmd = '"sed -i s/'.concat((isDarkModeEnabled) ? 'Light' : 'Dark').concat('/').concat((isDarkModeEnabled) ? 'Dark' : 'Light').concat('/g /home/coder/.local/share/code-server/User/settings.json || echo \'{\\"workbench.colorTheme\\": \\"Default Light Modern\\"}\' > /home/coder/.local/share/code-server/User/settings.json"')
-    console.log(shCmd);
+    //console.log(shCmd);
     const start = async () => {
       setReady(() => false);
 
@@ -27,6 +27,15 @@ export function App() {
         '/bin/sh',
         '-c',
         shCmd
+      ]);
+      ddClient.docker.cli.exec("exec", [
+        '-d',
+        '--user',
+        'root',
+        'coder_embedded_dd_vm',
+        'chgrp',
+        '1000',
+        '/var/run/docker.sock'
       ]);
     };
 
