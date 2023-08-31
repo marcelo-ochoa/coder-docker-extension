@@ -12,3 +12,5 @@ echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docke
 apt-get update
 apt-get install -y docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 echo "docker:x:999:coder" >> /etc/group
+chgrp docker /var/run/docker.sock
+su -l coder /bin/sh -c "code-server --install-extension=redhat.vscode-yaml --install-extension=ms-azuretools.vscode-docker --install-extension=yzhang.markdown-all-in-one"

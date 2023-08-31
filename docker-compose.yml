@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
     volumes:
       - coder_data:/home/coder
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock.raw:/var/run/docker.sock
     environment:
       TZ: America/Argentina/Buenos_Aires
     ports:

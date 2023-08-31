@@ -32,6 +32,30 @@ Once the extension is installed a new extension is listed at the pane Extension 
 
 By clicking at VS Code Web icon the extension main window will display the VS Code Web site once it has loaded.
 
+### Addind extra packages
+
+If want to run/debug NodeJS code a node command must be installed prior you checkout for project.
+To simplify that an script is provided as post installation step, here an example of using them:
+
+```bash
+$ docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addNodeJS.sh | bash"
+.... lots of ouput lines here .....
+Processing triggers for man-db (2.9.4-2) ...
+```
+
+Note 1: that if you upgrade VS Code Web Docker Desktop Extension these post installations steps must be re-done.
+
+Note 2: If you add Docker Client/Extension support [addDocker.sh](https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addDocker.sh) coder_embedded_dd_vm need to be restarted, execute:
+
+```bash
+$ docker restart coder_embedded_dd_vm
+coder_embedded_dd_vm
+```
+
+### Persistent storage
+
+Any project that you checkout using git command into /home/coder directory will persistent against Docker Desktop restart also VS Code Web extension upgraded.
+
 ## Uninstall
 
 To uninstall the extension just execute:
