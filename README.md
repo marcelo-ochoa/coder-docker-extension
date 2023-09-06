@@ -38,9 +38,21 @@ If want to run/debug NodeJS code a node command must be installed prior you chec
 To simplify that an script is provided as post installation step, here an example of using them:
 
 ```bash
-$ docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addNodeJS.sh | bash"
-.... lots of ouput lines here .....
-Processing triggers for man-db (2.9.4-2) ...
+docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addNodeJS.sh | bash"
+```
+
+Other run time extensions:
+
+```bash
+docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addDocker.sh | bash"
+```
+
+```bash
+docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addJava.sh | bash"
+```
+
+```bash
+docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addPython.sh | bash"
 ```
 
 Note 1: that if you upgrade VS Code Web Docker Desktop Extension above post installations steps must be re-done.
