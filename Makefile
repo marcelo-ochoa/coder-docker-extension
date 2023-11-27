@@ -2,8 +2,8 @@ all: clean extension install
 
 ORG=mochoa
 CODER_IMAGE_NAME=codercom/code-server
-VERSION=4.16
-MINOR=1
+VERSION=4.19
+MINOR=0
 IMAGE_NAME=$(ORG)/coder-docker-extension
 TAGGED_IMAGE_NAME=$(IMAGE_NAME):$(VERSION).${MINOR}
 
@@ -12,7 +12,7 @@ clean:
 	-docker rmi $(TAGGED_IMAGE_NAME)
 
 extension:
-	docker buildx build -t $(TAGGED_IMAGE_NAME) --build-arg VERSION=$(VERSION) --build-arg CODER_IMAGE_NAME=$(CODER_IMAGE_NAME) .
+	docker buildx build --load -t $(TAGGED_IMAGE_NAME) --build-arg VERSION=$(VERSION) --build-arg CODER_IMAGE_NAME=$(CODER_IMAGE_NAME) .
 
 install:
 	docker extension install -f $(TAGGED_IMAGE_NAME)

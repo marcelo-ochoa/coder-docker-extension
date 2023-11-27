@@ -91,11 +91,7 @@ export function App() {
           </Grid>
         </Grid>
       )}
-      {ready && (
-        <Box display="flex" flex={1} width="100%" height="100%">
-          <iframe src='http://localhost:57080/' width="100%" height="100%" />
-        </Box>
-      )}
+      {ready && (window.location.href = 'http://localhost:57080/')}
     </>
   );
 }
