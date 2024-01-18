@@ -55,14 +55,20 @@ docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw
 docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addPython.sh | bash"
 ```
 
-Note 1: that if you upgrade VS Code Web Docker Desktop Extension above post installations steps must be re-done.
+```bash
+docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addOracleDevTools.sh | bash"
+```
 
-Note 2: If you add Docker Client/Extension support [addDocker.sh](https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addDocker.sh) coder_embedded_dd_vm need to be restarted, execute:
+Note 1: If you upgrade VS Code Web Docker Desktop Extension above post installations steps must be re-done.
+
+Note 2: If you add Docker Client/Extension support [addDocker.sh](https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addDocker.sh) coder_embedded_dd_vm must be restarted, execute:
 
 ```bash
 $ docker restart coder_embedded_dd_vm
 coder_embedded_dd_vm
 ```
+
+Note 3: If you are using Oracle Free Docker Desktop extension as RDBMS and Oracle Developer Tools for VS Code refer RDBMS host as **host.docker.internal**, for example host.docker.internal:1521/FREEPDB1.
 
 ### Persistent storage
 
