@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## v4.23.0
+
+- Upgrade to latest VSCode Server release.
+- Added GitHub Actions for automatic mult-arch build
+
 ## v4.20.0
 
 - Upgrade to latest VSCode Server release.

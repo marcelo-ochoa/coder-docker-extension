@@ -11,11 +11,11 @@ Since Docker Desktop [v4.11.0](https://docs.docker.com/desktop/release-notes/#do
 If you are using Docker Desktop [v4.10.1](https://docs.docker.com/desktop/release-notes/#docker-desktop-4101) or less  you can install just by executing:
 
 ```bash
-$ docker extension install mochoa/coder-docker-extension:4.20.0
+$ docker extension install mochoa/coder-docker-extension:4.23.0
 Extensions can install binaries, invoke commands and access files on your machine.
 Are you sure you want to continue? [y/N] y
-Image not available locally, pulling mochoa/coder-docker-extension:4.20.0...
-Installing new extension "mochoa/coder-docker-extension:4.20.0"
+Image not available locally, pulling mochoa/coder-docker-extension:4.23.0...
+Installing new extension "mochoa/coder-docker-extension:4.23.0"
 Installing service in Desktop VM...
 Setting additional compose attributes
 VM service started
@@ -83,7 +83,7 @@ If your Docker Desktop is running in Dark Mode, first execution of VS Code Web w
 To uninstall the extension just execute:
 
 ```bash
-$ docker extension uninstall mochoa/coder-docker-extension:4.20.0
+$ docker extension uninstall mochoa/coder-docker-extension:4.23.0
 Extension "VS Code Web" uninstalled successfully
 ```
 
