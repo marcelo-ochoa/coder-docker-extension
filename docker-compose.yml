@@ -4,7 +4,7 @@ services:
   coder-docker-extension:
     image: ${DESKTOP_PLUGIN_IMAGE}
   coder:
-    image: codercom/code-server:4.23.0
+    image: codercom/code-server:4.23.1
     command: --auth none --verbose --app-name VS Code Web Docker Desktop Extension
     container_name: coder_embedded_dd_vm
     restart: unless-stopped
