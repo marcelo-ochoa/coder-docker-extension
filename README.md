@@ -59,6 +59,10 @@ docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw
 docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addOracleDevTools.sh | bash"
 ```
 
+```bash
+docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addGKS.sh | bash"
+```
+
 Note 1: If you upgrade VS Code Web Docker Desktop Extension above post installations steps must be re-done.
 
 Note 2: If you add Docker Client/Extension support [addDocker.sh](https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addDocker.sh) coder_embedded_dd_vm must be restarted, execute:
