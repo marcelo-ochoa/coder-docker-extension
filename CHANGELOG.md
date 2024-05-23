@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## v4.89.1
+
+- Upgrade to latest VSCode Server release.
+
 ## v4.23.1
 
 - Upgrade to latest VSCode Server release.
