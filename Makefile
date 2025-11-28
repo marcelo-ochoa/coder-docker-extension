@@ -2,8 +2,8 @@ all: clean extension install
 
 ORG=mochoa
 CODER_IMAGE_NAME=codercom/code-server
-VERSION=4.90
-MINOR=2
+VERSION=4.106.2
+MINOR=39
 IMAGE_NAME=$(ORG)/coder-docker-extension
 TAGGED_IMAGE_NAME=$(IMAGE_NAME):$(VERSION).${MINOR}
 

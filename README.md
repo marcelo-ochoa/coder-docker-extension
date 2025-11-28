@@ -11,11 +11,11 @@ Since Docker Desktop [v4.11.0](https://docs.docker.com/desktop/release-notes/#do
 If you are using Docker Desktop [v4.10.1](https://docs.docker.com/desktop/release-notes/#docker-desktop-4101) or less  you can install just by executing:
 
 ```bash
-$ docker extension install mochoa/coder-docker-extension:4.90.2
+$ docker extension install mochoa/coder-docker-extension:4.106.2-39
 Extensions can install binaries, invoke commands and access files on your machine.
 Are you sure you want to continue? [y/N] y
-Image not available locally, pulling mochoa/coder-docker-extension:4.90.2...
-Installing new extension "mochoa/coder-docker-extension:4.90.2"
+Image not available locally, pulling mochoa/coder-docker-extension:4.106.2-39...
+Installing new extension "mochoa/coder-docker-extension:4.106.2-39ß"
 Installing service in Desktop VM...
 Setting additional compose attributes
 VM service started
@@ -59,10 +59,6 @@ docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw
 docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addOracleDevTools.sh | bash"
 ```
 
-```bash
-docker exec -ti --user root coder_embedded_dd_vm /bin/sh -c "curl -s https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addGKS.sh | bash"
-```
-
 Note 1: If you upgrade VS Code Web Docker Desktop Extension above post installations steps must be re-done.
 
 Note 2: If you add Docker Client/Extension support [addDocker.sh](https://raw.githubusercontent.com/marcelo-ochoa/coder-docker-extension/main/addDocker.sh) coder_embedded_dd_vm must be restarted, execute:
@@ -87,7 +83,7 @@ If your Docker Desktop is running in Dark Mode, first execution of VS Code Web w
 To uninstall the extension just execute:
 
 ```bash
-$ docker extension uninstall mochoa/coder-docker-extension:4.90.2
+$ docker extension uninstall mochoa/coder-docker-extension:4.106.2-39
 Extension "VS Code Web" uninstalled successfully
 ```
 
